@@ -21,8 +21,14 @@ Take this amazing experience going to
 
 ## The Dataset column names
 
-```{r}
+
+```r
 names(mtcars)
+```
+
+```
+##  [1] "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear"
+## [11] "carb"
 ```
 
 ---
@@ -37,10 +43,5 @@ names(mtcars)
 
 ## Plot Sample
 
-```{r, echo=FALSE}
-    with(mtcars, {
-        plot(mpg ~ cyl,xlab="cyl",ylab="mpg")
-        abline(lm(mpg~cyl,data=mtcars),col=2)
-    })
-```
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
